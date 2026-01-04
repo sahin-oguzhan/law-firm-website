@@ -12,7 +12,7 @@ export default function AboutMe() {
 
             <div className="relative overflow-hidden rounded-sm shadow-xl aspect-3/4 lg:aspect-4/5">
               <img
-                src="./img/aleyna.png"
+                src="/img/aleyna.png"
                 alt=""
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105  "
               />

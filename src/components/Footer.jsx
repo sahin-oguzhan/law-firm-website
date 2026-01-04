@@ -144,7 +144,7 @@ export default function Footer() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 pb-4 text-center">
-          <p className="text-[9px] text-background-lightk">
+          <p className="text-[9px] text-background-light">
             Bu web sitesi Türkiye Barolar Birliği'nin Meslek Kurallarına ve
             Reklam Yasağı Yönetmeliği'ne uygun olarak hazırlanmıştır. Sitede yer
             alan bilgiler hukuki tavsiye niteliğinde değildir.

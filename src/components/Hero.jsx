@@ -7,11 +7,11 @@ export default function Hero() {
         <picture>
           <source
             media="(min-width: 768px)"
-            srcSet="./img/hero-bg-desktop.png"
+            srcSet="/img/hero-bg-desktop.png"
           />
 
           <img
-            src="./img/hero-bg-mobile.png"
+            src="/img/hero-bg-mobile.png"
             className="w-full h-full object-cover"
             alt="Hukuk Bürosu"
           />
