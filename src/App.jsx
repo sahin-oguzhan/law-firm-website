@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import PracticeAreas from './components/PracticeAreas';
 import AboutMe from './components/AboutMe';
+import ProcessAndStats from './components/ProcessAndStats';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Hero />
       <PracticeAreas />
       <AboutMe />
+      <ProcessAndStats />
     </>
   );
 }
