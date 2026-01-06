@@ -35,7 +35,7 @@ export default function ProcessAndStats() {
   ];
 
   return (
-    <section className="relative py-24 bg-secondary overflow-hidden">
+    <section id="sürec" className="relative py-24 bg-secondary overflow-hidden">
       <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
 
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-primary/20 rounded-full filter blur-[120px] pointer-events-none"></div>
@@ -110,16 +110,17 @@ export default function ProcessAndStats() {
 
         <div className="mt-16 text-center">
           <a
-            href="#"
+            href="mailto:info@aleynahukuk.com"
             className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-sm font-display font-bold uppercase tracking-[0.2em] hover:bg-[#8E7038] transition-all shadow-lg hover:shadow-primary/20 group"
           >
-            Randevu Oluştur
+            Dosyanızı Gönderin
             <span className="group-hover:translate-x-1 transition-transform">
               →
             </span>
           </a>
           <p className="mt-4 text-xs text-gray-500 font-light">
-            * İlk görüşme ve dosya incelemesi için lütfen randevu alınız.
+            * Hukuki durumunuzla ilgili özet bilgiyi mail üzerinden
+            iletebilirsiniz.
           </p>
         </div>
       </div>

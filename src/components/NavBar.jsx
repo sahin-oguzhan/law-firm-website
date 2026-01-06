@@ -35,11 +35,11 @@ export default function NavBar() {
             </a>
 
             <nav className="hidden md:flex space-x-12 lg:space-x-16 items-center">
-              <NavItem text="ANASAYFA" />
-              <NavItem text="HAKKIMDA" />
-              <NavItem text="UZMANLIK ALANLARI" />
-              <NavItem text="SÜREÇ" />
-              <NavItem text="İLETİŞİM" />
+              <NavItem text="ANASAYFA" target="#anasayfa" />
+              <NavItem text="HAKKIMDA" target="#hakkimda" />
+              <NavItem text="UZMANLIK ALANLARI" target="#uzmanlik" />
+              <NavItem text="SÜREÇ" target="#sürec" />
+              <NavItem text="İLETİŞİM" target="#iletisim" />
             </nav>
 
             <button
@@ -96,10 +96,10 @@ export default function NavBar() {
   );
 }
 
-function NavItem({ text }) {
+function NavItem({ text, target }) {
   return (
     <a
-      href="#"
+      href={target}
       className="font-display text-xs font-semibold text-secondary hover:text-primary transition-colors tracking-[0.15em] relative group"
     >
       {text}
@@ -108,10 +108,10 @@ function NavItem({ text }) {
   );
 }
 
-function MobileNavItem({ text, onClick }) {
+function MobileNavItem({ text, target, onClick }) {
   return (
     <a
-      href="#"
+      href={target}
       onClick={onClick}
       className="font-serif text-2xl text-secondary hover:text-primary transition-colors hover:tracking-widest duration-300"
     >

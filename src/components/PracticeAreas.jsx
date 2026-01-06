@@ -35,7 +35,7 @@ export default function PracticeAreas() {
   ];
 
   return (
-    <section className="py-32 bg-surface-light relative">
+    <section id="uzmanlik" className="py-32 bg-surface-light relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <span className="font-display text-primary tracking-[0.3em] uppercase text-xs font-bold mb-4 block">

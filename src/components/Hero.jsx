@@ -2,7 +2,10 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="anasayfa"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
       <div className="absolute inset-0 z-0">
         <picture>
           <source
@@ -34,16 +37,17 @@ export default function Hero() {
 
         <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
           <a
-            href="#"
+            href="https://wa.me/905555555555"
+            target="_blank"
             className="inline-flex items-center justify-center px-10 py-4 border border-transparent text-sm font-semibold rounded-sm text-white bg-primary hover:bg-[#8E7038] transition-all duration-300 shadow-lg tracking-[0.2em] font-display uppercase hover:shadow-primary/30"
           >
-            Randevu Alın
+            WhatsApp'tan Yazın
           </a>
           <a
-            href="#"
+            href="tel:+902125550123"
             className="inline-flex items-center justify-center px-10 py-4 border border-white/80 text-sm font-semibold rounded-sm text-white hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-[0.2em] font-display uppercase bg-black/10 backdrop-blur-sm"
           >
-            İLETİŞİME GEÇİN
+            Hemen Arayın
           </a>
         </div>
       </div>

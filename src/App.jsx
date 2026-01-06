@@ -5,6 +5,8 @@ import PracticeAreas from './components/PracticeAreas';
 import AboutMe from './components/AboutMe';
 import ProcessAndStats from './components/ProcessAndStats';
 import Footer from './components/Footer';
+import FloatingContact from './components/FloatingContact';
+import Faq from './components/Faq';
 
 export default function App() {
   return (
@@ -16,7 +18,9 @@ export default function App() {
         <AboutMe />
         <ProcessAndStats />
       </main>
+      <Faq />
       <Footer />
+      <FloatingContact />
     </div>
   );
 }
