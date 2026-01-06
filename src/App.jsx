@@ -17,8 +17,8 @@ export default function App() {
         <PracticeAreas />
         <AboutMe />
         <ProcessAndStats />
+        <Faq />
       </main>
-      <Faq />
       <Footer />
       <FloatingContact />
     </div>

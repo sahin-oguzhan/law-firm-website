@@ -39,6 +39,7 @@ export default function NavBar() {
               <NavItem text="HAKKIMDA" target="#hakkimda" />
               <NavItem text="UZMANLIK ALANLARI" target="#uzmanlik" />
               <NavItem text="SÜREÇ" target="#sürec" />
+              <NavItem text="SSS" target="#sss" />
               <NavItem text="İLETİŞİM" target="#iletisim" />
             </nav>
 
@@ -77,6 +78,7 @@ export default function NavBar() {
             text="SÜREÇ & İSTATİSTİKLER"
             onClick={() => setIsOpen(false)}
           />
+          <MobileNavItem text="SSS" onClick={() => setIsOpen(false)} />
           <MobileNavItem text="İLETİŞİM" onClick={() => setIsOpen(false)} />
 
           <div className="pt-10 border-t border-primary/20 mt-10 w-48 mx-auto">
