@@ -1,26 +1,17 @@
 import './App.css';
-import Hero from './components/Hero';
-import NavBar from './components/NavBar';
-import PracticeAreas from './components/PracticeAreas';
-import AboutMe from './components/AboutMe';
-import ProcessAndStats from './components/ProcessAndStats';
-import Footer from './components/Footer';
-import FloatingContact from './components/FloatingContact';
-import Faq from './components/Faq';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import AdminPanel from './pages/AdminPanel';
 
-export default function App() {
+function App() {
   return (
-    <div className="antialiased text-secondary bg-background-light">
-      <NavBar />
-      <main>
-        <Hero />
-        <PracticeAreas />
-        <AboutMe />
-        <ProcessAndStats />
-        <Faq />
-      </main>
-      <Footer />
-      <FloatingContact />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<AdminPanel />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;
