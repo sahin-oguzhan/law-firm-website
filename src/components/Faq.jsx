@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HiPlus, HiMinus, HiPencil, HiTrash } from 'react-icons/hi2'; // Admin ikonlarını da ekledim
+import { HiPlus, HiMinus, HiPencil, HiTrash } from 'react-icons/hi2';
 import RevealOnScroll from './RevealOnScroll';
 import axios from 'axios';
 

@@ -26,10 +26,10 @@ export default function NavBar() {
               </div>
               <div className="flex flex-col">
                 <h1 className="font-display font-bold text-xl text-secondary tracking-[0.15em] leading-none mb-1">
-                  ALEYNA
+                  AV. ALEYNA ÖÇGÜN
                 </h1>
                 <h2 className="font-display text-[10px] text-primary font-bold tracking-[0.3em] uppercase leading-none">
-                  HUKUK BÜROSU
+                  HUKUK & DANIŞMANLIK
                 </h2>
               </div>
             </a>

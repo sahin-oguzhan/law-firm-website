@@ -6,7 +6,6 @@ export default function PracticeAreas() {
   const [practices, setPractices] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Modal State'leri
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     id: null,
