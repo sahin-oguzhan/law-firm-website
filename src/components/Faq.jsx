@@ -19,7 +19,7 @@ export default function FaqSection() {
 
   const fetchFaqs = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/faq');
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/faq`);
       setFaqs(res.data);
       setLoading(false);
     } catch (error) {
@@ -39,14 +39,14 @@ export default function FaqSection() {
   const handleDelete = async (id, e) => {
     e.stopPropagation();
     if (window.confirm('Bu soruyu silmek istediğine emin misin?')) {
-      await axios.delete(`http://localhost:8080/api/faq/${id}`);
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/faq/${id}`);
       fetchFaqs();
     }
   };
 
   const handleSave = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:8080/api/faq', formData);
+    await axios.post(`${import.meta.env.VITE_API_URL}/api/faq`, formData);
     setIsModalOpen(false);
     fetchFaqs();
   };

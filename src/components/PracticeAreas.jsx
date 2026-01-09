@@ -18,7 +18,9 @@ export default function PracticeAreas() {
 
   const fetchPractices = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/practices');
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/practices`,
+      );
       setPractices(res.data);
       setLoading(false);
     } catch (error) {
@@ -33,14 +35,14 @@ export default function PracticeAreas() {
 
   const handleDelete = async (id) => {
     if (window.confirm('Bu uzmanlık alanını silmek istediğine emin misin?')) {
-      await axios.delete(`http://localhost:8080/api/practices/${id}`);
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/practices/${id}`);
       fetchPractices();
     }
   };
 
   const handleSave = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:8080/api/practices', formData);
+    await axios.post(`${import.meta.env.VITE_API_URL}/api/practices`, formData);
     setIsModalOpen(false);
     fetchPractices();
   };

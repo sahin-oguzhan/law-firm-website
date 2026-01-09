@@ -34,7 +34,10 @@ export default function Dashboard() {
     setSubmitStatus({ type: 'loading', message: 'Makale gönderiliyor...' });
 
     try {
-      await axios.post('http://localhost:8080/api/articles', formData);
+      await axios.post(
+        `${import.meta.env.VITE_API_URL}/api/articles`,
+        formData,
+      );
       setSubmitStatus({
         type: 'success',
         message: 'Makale başarıyla yayınlandı! 🎉',

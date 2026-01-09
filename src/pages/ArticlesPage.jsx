@@ -8,7 +8,7 @@ export default function ArticlesPage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8080/api/articles')
+      .get(`${import.meta.env.VITE_API_URL}/api/articles`)
       .then((res) => {
         setArticles(res.data.reverse());
         setLoading(false);

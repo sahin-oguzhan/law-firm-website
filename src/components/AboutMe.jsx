@@ -17,7 +17,7 @@ export default function AboutMe() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/about');
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/about`);
       if (!res.data.description) {
         setData({
           description:
@@ -36,7 +36,7 @@ export default function AboutMe() {
 
   const handleSave = async () => {
     try {
-      await axios.post('http://localhost:8080/api/about', editForm);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/about`, editForm);
       setData(editForm);
       setIsEditing(false);
       alert('Hakkımda kısmı güncellendi! ✅');

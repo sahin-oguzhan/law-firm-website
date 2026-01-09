@@ -21,7 +21,9 @@ export default function BlogSection() {
 
   const fetchArticles = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/articles');
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/articles`,
+      );
       setArticles(res.data.reverse());
       setLoading(false);
     } catch (error) {
@@ -37,7 +39,7 @@ export default function BlogSection() {
   const handleDelete = async (id, e) => {
     e.preventDefault();
     if (window.confirm('Silmek istediğine emin misin?')) {
-      await axios.delete(`http://localhost:8080/api/articles/${id}`);
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/articles/${id}`);
       fetchArticles();
     }
   };
@@ -47,12 +49,15 @@ export default function BlogSection() {
     try {
       if (formData.id) {
         await axios.put(
-          `http://localhost:8080/api/articles/${formData.id}`,
+          `${import.meta.env.VITE_API_URL}/api/articles/${formData.id}`,
           formData,
         );
         alert('Makale güncellendi! ✅');
       } else {
-        await axios.post('http://localhost:8080/api/articles', formData);
+        await axios.post(
+          `${import.meta.env.VITE_API_URL}/api/articles`,
+          formData,
+        );
         alert('Makale yayınlandı! ✍️');
       }
 
