@@ -25,7 +25,7 @@ export default function Login() {
       if (response.status === 200) {
         localStorage.setItem('isAdminLoggedIn', 'true');
 
-        navigate('/dashboard');
+        navigate('/');
       }
     } catch (err) {
       setError('Kullanıcı adı veya şifre hatalı!');
